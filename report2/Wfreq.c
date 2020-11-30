@@ -34,10 +34,12 @@ int main(){
 	}
 	for(t='a';t <= 'z';t++){
 		printf("%c:%.0f:%.2f%%\n",t,w[t],(w[t]/n)*100);
-		fprintf(fp2,"%c:%.0f%%\n",t,w[t]/n*100);
+		fprintf(fp2,"%c:%.0f:%.0f%%\n",t,w[t],(w[t]/n)*100);
 	}
-	printf("blank:%.1f%%\n",(b/n)*100);
-	fprintf(fp2,"blank:%.1f%%\n",(b/n)*100);
+	printf("blank:%.0f:%.1f%%\n",b,(b/n)*100);
+	printf("all w:%.0f\n",n);
+	fprintf(fp2,"blank:%.0f:%.1f%%\n",b,(b/n)*100);
+	fprintf(fp2,"all w:%.0f\n",n);
 
 	fclose(fp1);
 	fclose(fp2);
