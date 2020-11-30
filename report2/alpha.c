@@ -29,8 +29,6 @@ int main(){
 		}else{
 		}
 	}
-	
-	printf("\n");
 
 	fclose(fp1);
 	fclose(fp2);
