@@ -23,10 +23,7 @@ int main(){
 	}
 
 	while(fscanf(fp1,"%c",&t) != EOF){
-		if(isalpha(t)){
-			printf("%c",t);
-			fprintf(fp2,"%c",t);
-		}else if(isblank(t)){
+		if(isalpha(t) || isblank(t) || t == '\n'){
 			printf("%c",t);
 			fprintf(fp2,"%c",t);
 		}else{
